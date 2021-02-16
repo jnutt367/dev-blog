@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+</style>
+
+<body>
+    <h1>So, how does en event work in Node.js?...And just what IS node anyways?</h1>
+    <img src="images/web-dev.png">
+    <h2>First, I would like to start by suggesting that we take EVERYTHING else OFF of the table.</h2>
+    <h2> JUST have your favorite text editor (I mean VS code lol), open with an empty folder and name it something like node-app, as that is what you will be aspiring to build.</h2>
+    <h2> Then, we just need to open the terminal by holding CNTL + J. I am on a Mac so windows will vary slightly with the keyboard shortcut.</h2>
+    <h2> This means it should look something similar to this
+    </h2>
+    <img src="images/terminal.png" style="height: 400px; width: 100%;">
+    <h2> In order to make sure that node.js is installed on your machine properly,</h2>
+    <h2>just type into the terminal (which you have just opened by pressing CTRL + J) <em>node -v</em> </h2>
+    <h2>...Press enter/return</h2>
+
+    <h2>This will either do one of two things.</h2>
+    <h2> It will tell you the version of node that you are working with OR </h2>
+    </h2>it will let you know that it doesn't know WTH you are asking it.</h2>
+    <h2>NO WORRIES, </h2>
+    <h2>if typing <em> node -v  </em> gets you a message that says something other than it's version,</h2>
+    <h2> then you DO NOT have Node.js downloaded and there is a quick easy fix..</h2>
+    <h2>are you still here?? DOWNLOAD Node.js!! </h2>
+    <a href="https://nodejs.org/en/download/">Node.js</a>
+    <h2>Ok, GREAT! Now that we know for certain that node.js is installed <br> and is currently running in our terminal,</h2>
+    <h2> we can make sure that the package manager (npm) is up to date.</h2>
+    <h2> <em>npm</em> is a node package manager and is INCLUDED when you install Node.js. </h2>
+    <h2>The way to check your version of npm is the same as checking for the node version.</h2>
+    <h2> Type the following <em>npm -v</em>.</h2>
+    <h2> Ok, GREAT, another breakthrough.</h2>
+    <h2> NOW you ARE working on a node application.</h2>
+    <h2>I know you have not written ANY html or css or javascript!</h2>
+    <h2>I thought this very thing also!</h2>
+    <h2> You HAVE ensured your runtime by making sure that node and npm are here in your environment.</h2>
+    <h2> I hope that helps someone...</h2>
+    <h2> Later, we will utilize npm by asking it to install whatever node module that works best for the application that we decide to make.</h2>
+    <h2> SO, what IS Node.js? </h2>
+    <h2>You'll often hear people describe it as asynchronous event driven javascript runtime...</h2>
+    <h2>runtime implements a thing called an event loop.</h2>
+    <h2> JUST LIKE A WEB BROWSER!!
+    </h2>
+    <img src="images/notes-4-node.jpeg" style="height: 400px; width: 100%;">
+
+
+    <h2>And it (the runtime event loop) allows node to push intensive operations off to a seperate thread, so only fast, non-blocking operations happen on the main thread.</h2>
+    <h2> ...This is why people often call node non-blocking. </h2>
+    <h2>It is a design choice that makes node suitable for things like "Real Time" applications and Web Servers</h2>
+    <h2>...things like that.</h2>
+    <!-- <h2> How Do Web Servers and Application Servers Work Together?</h2>
+    <h2> In a typical (non embedded) deployment, </h2>
+    <h2> a website runs a web server for the static content and a separate application server for the business logic.</h2>
+    <h2> However, in resource constrained systems,</h2>
+
+    <h2>including embedded systems and devices, a combined web server and application server is necessary.</h2>
+    <h2> These systems require a small application server with a fast internal embedded web server.</h2>
+-->
+    <img src="images/uggh.png">
+    <h2>OK?!....So how does this affect me as a Coder?</h2>
+
+    <h2> Well, normally...you won't have to think about the low level details,
+        <h2>Well, now that we have installed Node.js, let's build our first web server. </h2>
+        <h2>Create a file named app.js containing the following contents:</h2>
+        <h2>you just need to know how callbacks and events work... </h2>
+        <h2> most cases you'll listen to events, events come in many forms in Node.js.</h2>
+        <h2> One example is on the `process` global.
+        </h2>
+
+        <h2>Before a node process finishes, it emits an event named exit,</h2>
+        <h2>we can listen to this event by using `.on`, then registering a callback function as the second argument.</h2>
+        <h2>`process.on ('exit', function() => { //Run this code block // })`</h2>
+        <h2>whenever the</h2>
+        <h2>`exit` event occurs, THAT is when node will run this block of code, (whatever the function does).</h2>
+        <h2> That is where it gets its name "callback".</h2>
+        <h2>Because it is NOT called the first time that node sees it,</h2>
+        <h2> it is ONLY called after the exit event occurs at</h2>
+        <h2> SOME POINT in the future.</h2>
+
+        <h2>This event is built into node, but you may make your own from scratch.</h2>
+        <h2>This knowledge is not covered here.</h2>
+        <h2>We can import an `{ EventEmitter }` from the events module that is also built into node</h2>
+        <h2>(do you see a theme here?), there are a lot of useful modules built into node.</h2>
+        <h2>I will make a whole other blog that covers modules more. And then another because there are many!</h2>
+        <h2>This event driven style of programming is extremely useful when you have something that is CPU intensive.</h2>
+        <h2> And with that,</h2>
+        <h2>we will move on to the next phase of my beginner's guide to node.js with an explanation of a </h2>
+        <h2> in file system that comes with node.js called fs.</h2>
+        <h1> I sincerely hope that this will help someone to get their head around node.js & npm.</h1>
+
+        <h2>If it didn't, tune in to the next one and I will try harder to make it more iterable and useful. Happy coding and learning Everyone!!!
+        </h2>
+
+</body>
+
+</html>
