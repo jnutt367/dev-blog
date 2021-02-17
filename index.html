@@ -25,6 +25,13 @@
         font-size: 15px;
     }
     
+    pre code {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 20px;
+    }
+    
     body {
         display: flex;
         flex-wrap: wrap;
@@ -60,14 +67,14 @@
     </h2>
     <img src="images/terminal.png" style="height: 400px; width: 100%;">
     <h2> In order to make sure that node.js is installed on your machine properly,</h2>
-    <h2>just type into the terminal (which you have just opened by pressing CTRL + J) <em>node -v</em> </h2>
+    <h2>just type into the terminal (which you have just opened by pressing CTRL + J) <pre><code style="width: 200px;">node -v</code></pre></h2>
     <h2>...Press enter/return</h2>
 
     <h2>This will either do one of two things.</h2>
     <h2> It will tell you the version of node that you are working with OR </h2>
     <h2 style="color: red;">it will let you know that it doesn't know WTF you are asking it.</h2>
     <h2>NO WORRIES, </h2>
-    <h2>if typing <em> node -v  </em> gets you a message that says something other than it's version,</h2>
+    <h2>if typing <pre><code style="width: 200px;">node -v</code></pre> gets you a message that says something other than it's version,</h2>
     <h2> then you DO NOT have Node.js downloaded and there is a quick easy fix..</h2>
     <h2>are you still here?? DOWNLOAD Node.js!! </h2>
     <h2><a href="https://nodejs.org/en/download/" alt="node-bg">Node.js</a></h2>
@@ -75,7 +82,7 @@
     <h2> we can make sure that the package manager (npm) is up to date.</h2>
     <h2> <em>npm</em> is a node package manager and is INCLUDED when you install Node.js. </h2>
     <h2>The way to check your version of npm is the same as checking for the node version.</h2>
-    <h2> Type the following <em>npm -v</em>.</h2>
+    <h2> Type the following <pre><code style="width:200px;">npm -v</code></pre></h2>
     <h2> Ok, GREAT, another breakthrough.</h2>
     <h2> NOW you ARE working on a node application.</h2>
     <h2>I know you have not written ANY html or css or javascript!</h2>
@@ -83,7 +90,7 @@
     <img src="images/laughing-crying.png" style="border:1px solid red; border-radius: 50%;" alt="me laughing">
     <h2> You HAVE ensured your runtime by making sure that node and npm are here in your environment.</h2>
     <h2> I hope that helps someone...</h2>
-    <h2 style="border:1px solid red;">Also, puuting a 1px solid red border @ things helps me to work with their layout more easily with CSS because I can physically see what I am working with and the space the element is taking up...as you can clearly see here.</h2>
+    <h2 style="border:1px solid red;">Also, putting a 1px solid red border @ things helps me to work with their layout more easily with CSS because I can physically see what I am working with and the space the element is taking up...as you can clearly see here.</h2>
     <h2> Later, we will utilize npm by asking it to install whatever node module that works best for the application that we decide to make.</h2>
     <h2> SO, what IS Node.js? </h2>
     <h2>You'll often hear people describe it as asynchronous event driven javascript runtime...</h2>
@@ -111,14 +118,27 @@
     <h2> Well, normally...you won't have to think about the low level details,</h2>
     <h2>you just need to know how callbacks and events work... </h2>
     <h2> most cases you'll listen to events, events come in many forms in Node.js.</h2>
-    <h2> One example is on the `process` global.
+    <h2> One example is on the <pre><code style="width: 100px;">process</code></pre> global.
     </h2>
 
     <h2>Before a node process finishes, it emits an event named exit,</h2>
-    <h2>we can listen to this event by using `.on`, then registering a callback function as the second argument.</h2>
-    <h2>`process.on ('exit', function() => { //Run this code block // })`</h2>
+    <h2>we can listen to this event by using
+        <pre>
+        <code style="width:200px;">
+            .on
+        </code>
+    </pre> , then registering a callback function as the second argument.</h2>
+    <h2>
+        <pre>
+            <code>
+                process.on ('exit', function() =><br>
+                 { //Run this code block // })
+            </code>
+        </pre>
+    </h2>
     <h2>whenever the</h2>
-    <h2>`exit` event occurs, THAT is when node will run this block of code, (whatever the function does).</h2>
+    <h2>
+        <pre><code style="width:100px;">exit</code></pre> event occurs, THAT is when node will run this block of code, (whatever the function does).</h2>
     <h2> That is where it gets its name "callback".</h2>
     <h2>Because it is NOT called the first time that node sees it,</h2>
     <h2> it is ONLY called after the exit event occurs at</h2>
@@ -126,13 +146,18 @@
 
     <h2>This event is built into node, but you may make your own from scratch.</h2>
     <h2>This knowledge is not covered here.</h2>
-    <h2>We can import an `{ EventEmitter }` from the events module that is also built into node</h2>
+    <h2>We can import an
+        <pre>
+        <code>
+                { EventEmitter }
+            </code>
+        </pre> from the events module that is also built into node</h2>
     <h2>(do you see a theme here?), there are a lot of useful modules built into node.</h2>
     <h2>I will make a whole other blog that covers modules more. And then another because there are many!</h2>
     <h2>This event driven style of programming is extremely useful when you have something that is CPU intensive.</h2>
     <h2> And with that,</h2>
     <h2>we will move on to the next phase of my beginner's guide to node.js with an explanation of a </h2>
-    <h2> in file system that comes with node.js called fs.</h2>
+    <h2> BUILT IN file system that comes with node.js called fs.</h2>
     <h1> I sincerely hope that this will help someone to get their head around node.js & npm.</h1>
     <h2>If I have left out a crucial step or am in error in any way, </h2>
     <h2> let me know as I am here to learn and pass it on...that is all
