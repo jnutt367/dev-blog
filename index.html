@@ -25,10 +25,8 @@
     
     pre code {
         background-color: black;
-        color: #fff;
-        border: 1px solid #999;
-        display: block;
-        padding: 20px;
+        color: white;
+        padding: 10px;
     }
     
     body {
@@ -44,13 +42,33 @@
         margin-left: 30px;
         padding-right: 15px;
     }
+    
+    .nav-wrap a {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        color: white;
+    }
 </style>
 
 <body>
 
     <header>
+        <div class="nav-wrap">
+            <ul>
+                <a href="index.html">
+                    <li>Blog #1</li>
+                </a>
+                <a href="second-blog.html">
+                    <li>Blog #2</li>
+                </a>
+                <a href="third-blog.html">
+                    <li>Blog #3</li>
+                </a>
+            </ul>
+        </div>
         <h1>A developer's Blog</h1>
-        <h1>A Walk Through of the Land of Node</h1>
+        <h1>A Walk Through of the Land of Node.js</h1>
         <h2>with Jason Nutt</h2>
     </header>
 
@@ -123,51 +141,45 @@
 
     <h2>Before a node process finishes, it emits an event named exit,</h2>
     <h2>we can listen to this event by using
-        <pre>
-        <code style="width:200px;">
-            .on
-        </code>
-    </pre> , then registering a callback function as the second argument.</h2>
-    <h2>
-        <pre>
-            <code>
-                process.on ('exit', function() =><br>
-                 { //Run this code block // })
-            </code>
-        </pre>
-    </h2>
-    <h2>whenever the</h2>
-    <h2>
-        <pre><code style="width:100px;">exit</code></pre> event occurs, THAT is when node will run this block of code, (whatever the function does).</h2>
-    <h2> That is where it gets its name "callback".</h2>
-    <h2>Because it is NOT called the first time that node sees it,</h2>
-    <h2> it is ONLY called after the exit event occurs at</h2>
-    <h2> SOME POINT in the future.</h2>
 
-    <h2>This event is built into node, but you may make your own from scratch.</h2>
-    <h2>This knowledge is not covered here.</h2>
-    <h2>We can import an</h2>
-    <h2>
-        <pre>
-            <code style="width:400px;">
-               { EventEmitter }
-            </code>
-        </pre>
-    </h2>
-    <h2>from the events module that is also built into node</h2>
-    <h2>(do you see a theme here?), there are a lot of useful modules built into node.</h2>
-    <h2>I will make a whole other blog that covers modules more. And then another because there are many!</h2>
-    <h2>This event driven style of programming is extremely useful when you have something that is CPU intensive.</h2>
-    <h2> And with that,</h2>
-    <h2>we will move on to the next phase of my beginner's guide to node.js with an explanation of a </h2>
-    <h2> BUILT IN file system that comes with node.js called fs.</h2>
-    <h1> I sincerely hope that this will help someone to get their head around node.js & npm.</h1>
-    <h2>If I have left out a crucial step or am in error in any way, </h2>
-    <h2> let me know as I am here to learn and pass it on...that is all
-    </h2>
-    <h2>If it didn't, tune in to the next one and I will try harder to make it more iterable and useful. Happy coding and learning Everyone!!!
-    </h2>
-    <a href="second-blog.html">This will take you to the next blog if you want to follow...</a>
+        <h2 style="background-color: black; color: white; padding: 10px;">
+            .on
+        </h2>
+        <h2>, then registering a callback function as the second argument.</h2>
+        <h2 style="background-color: black; color: white; padding: 10px;">
+
+            process.on ('exit', function() =><br> { //Run this code block // })
+        </h2>
+        <h2>whenever the</h2>
+        <h2>
+            <pre><code style="width:100px;">exit</code></pre> event occurs, THAT is when node will run this block of code, (whatever the function does).</h2>
+        <h2> That is where it gets its name "callback".</h2>
+        <h2>Because it is NOT called the first time that node sees it,</h2>
+        <h2> it is ONLY called after the exit event occurs at</h2>
+        <h2> SOME POINT in the future.</h2>
+
+        <h2>This event is built into node, but you may make your own from scratch.</h2>
+        <h2>This knowledge is not covered here.</h2>
+        <h2>We can import an</h2>
+        <h2 style="background-color: black; color: white; padding: 10px;">
+            { EventEmitter }
+
+        </h2>
+        <h2>from the events module that is also built into node</h2>
+        <h2>(do you see a theme here?), there are a lot of useful modules built into node.</h2>
+        <h2>I will make a whole other blog that covers modules more. And then another because there are many!</h2>
+        <h2>This event driven style of programming is extremely useful when you have something that is CPU intensive.</h2>
+        <h2> And with that,</h2>
+        <h2>we will move on to the next phase of my beginner's guide to node.js with an explanation of a </h2>
+        <h2> BUILT IN file system that comes with node.js called fs.</h2>
+        <h1> I sincerely hope that this will help someone to get their head around node.js & npm.</h1>
+        <h2>If I have left out a crucial step or am in error in any way, </h2>
+        <h2> let me know as I am here to learn and pass it on...that is all
+        </h2>
+        <h2>Have a closer more detailed look at <a href="https://nodejs.org/api/events.html">Events in Node.js</a></h2>
+        <h2>If it didn't, tune in to the next one and I will try harder to make it more iterable and useful. Happy coding and learning Everyone!!!
+        </h2>
+        <a href="second-blog.html">This will take you to the next blog if you want to follow...</a>
 </body>
 
 </html>

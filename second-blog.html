@@ -31,6 +31,13 @@
         padding: 20px;
     }
     
+    .nav-wrap a {
+        display: flex;
+        flex-direction: flex-end;
+        font-size: 20px;
+        color: white;
+    }
+    
     body {
         display: flex;
         flex-wrap: wrap;
@@ -48,11 +55,45 @@
 
 <body>
     <header>
+        <div class="nav-wrap">
+            <ul>
+                <a href="index.html">
+                    <li>Blog #1</li>
+                </a>
+                <a href="second_blog.html">
+                    <li>Blog #2</li>
+                </a>
+                <a href="#">
+                    <li>Blog #3</li>
+                </a>
+            </ul>
+        </div>
         <h1>A developer's Blog</h1>
-        <h1>Second Blog about node.js</h1>
+
+        <h1>Second Blog/ Node.js/ a file sytem called fs module</h1>
         <h2>with Jason Nutt</h2>
     </header>
-    <h1>This here is the continued walkthrough of Node.js docs...</h1>
-    <h2>Currently we are learning about the built in file system called fs.</h2><a href="index.html">This will take you to home...</a></body>
+    <h1>This is the continued walkthrough of Node.js docs...</h1>
+    <h3> A re-re-iterated version of compiled notes & learning From Treehouse, YouTube, DevEd, Node.js Docs and more...</h3>
+    <img src="images/web-dev.png">
+
+    <h2>Blog # 2:Currently we are learning about the built in file system called fs.</h2>
+    <h2>The fs module enables interacting with the file system in a way modeled on standard POSIX functions.</h2>
+    <h2 style="background-color: silver; padding: 7px;">The Portable Operating System Interface (POSIX) is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems.</h2>
+    </h2>
+
+    <h2>In order to use this module, create an app.js file in the root of this directory...</h2>
+    <h2 style="background-color: black; color: white; padding: 10px;">const fs = require(<span style="color:red;">'fs'</span>);</h2>
+    <br>
+
+    <h2>All file system operations have synchronous, callback, and promise-based forms.</h2>
+    <h2>I'm doing all this with the same project that I am writing this blog in. I think that is fine...</h2>
+    <h3>...I guess that's fine. We shall see.</h3>
+    <h2>The only javascript I have written is that ONE line of code that says to require('ls'),(this is a built in function)...</h2>
+
+
+    <h2><a href="index.html">This will take you to home...</a></h2>
+
+</body>
 
 </html>
