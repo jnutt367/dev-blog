@@ -1,0 +1,23 @@
+{
+  "name": "my-Blogs-About-code",
+  "version": "1.0.0",
+  "description": "My developers blog This is a blog that i wrote in order to follow and possibly teach the steps that it  takes in order to start creating node apps with npm. To be continued...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnutt367/dev-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnutt367/dev-blog/issues"
+  },
+  "homepage": "https://github.com/jnutt367/dev-blog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
