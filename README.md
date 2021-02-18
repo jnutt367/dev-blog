@@ -9,6 +9,3 @@ npm install
 npm install express --save
 writing some code today
 
-Now, lets add some code for our application
-Depending on the text editor that you'd like to use, you can usually create2:52
-a new file and launch it in the new editor from the command line.
