@@ -60,6 +60,16 @@
         margin-bottom: 5px;
         list-style-type: none;
     }
+    
+    .nav-bottom ul li a {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
 </style>
 
 <body>
@@ -118,7 +128,7 @@
     <h2> NOW you ARE working on a node application.</h2>
     <h2>I know you have not written ANY html or css or javascript!</h2>
     <h2>I thought this very thing also!</h2>
-    <img src="images/laughing-crying.png" style="border:1px solid red; border-radius: 50%;" alt="me laughing">
+    <img src="images/laughing-crying.png" alt="me laughing">
     <h2> You HAVE ensured your runtime by making sure that node and npm are here in your environment.</h2>
     <h2> I hope that helps someone...</h2>
     <h2 style="border:1px solid red;">Also, putting a 1px solid red border @ things helps me to work with their layout more easily with CSS because I can physically see what I am working with and the space the element is taking up...as you can clearly see here.</h2>
@@ -192,7 +202,20 @@
         <h2>Have a closer more detailed look at <a href="https://nodejs.org/api/events.html">Events in Node.js</a></h2>
         <h2>If it didn't, tune in to the next one and I will try harder to make it more iterable and useful. Happy coding and learning Everyone!!!
         </h2>
-        <a href="second-blog.html">This will take you to the next blog if you want to follow...</a>
+        <div class="nav-bottom">
+            <ul>
+                <a href="third-blog.html">
+                    <li>3</li>
+                </a>
+                <a href="second-blog.html">
+                    <li>2</li>
+                </a>
+                <a href="index.html">
+                    <li>1</li>
+                </a>
+            </ul>
+        </div>
+
 </body>
 
 </html>
