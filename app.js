@@ -1,5 +1,5 @@
 const express = require('express');
 
-const app = expree();
+const app = express();
 
 app.listen(3000);
