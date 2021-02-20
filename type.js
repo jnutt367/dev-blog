@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('text')
-const phrases = ['Blog # 5, Creating a Route continued...', 'Second Blog', 'Blog # 3', 'Blog # 4 Now lets see how Routing works in express with Node.js!...']
+const phrases = ['...Jason Nutt 02/20/2021', 'Second Blog', 'Blog # 3', 'Blog # 4 Now lets see how Routing works in express with Node.js!...']
 let i = 0
 let j = 0
 let currentPhrase = []
